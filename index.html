@@ -9,7 +9,65 @@
     <title>Document</title>
 </head>
 <body>
-
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h1>Movies</h1>
+                    <label>
+                        <input id="search" type="text" placeholder="...search">
+                    </label>
+                    <label>
+                        <select id="genre">
+                            <option value="genre">genre</option>
+                            <option value="romantic">romantic</option>
+                            <option value="horror">horror</option>
+                            <option value="sci-fi">sci-fi</option>
+                            <option value="comedy">comedy</option>
+                            <option value="kids-friendly">kids-friendly</option>
+                            <option value="action">action</option>
+                        </select>
+                    </label>
+                    <button class="update">Update A Movie</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="column d-flex" id="favorite">
+                </div>
+            </div>
+        </div>
+        <div class="loader">loading</div>
+        <button class="addMovie">addMovie</button>
+        <div class="new">
+            <label>
+                <input id="title" type="text" placeholder="title">
+                <input id="summary" type="text" placeholder="summary">
+                <input id="rating" type="text" placeholder="number 1-5">
+            </label>
+            <button id="add">add to favorite</button>
+        </div>
+        <div class="user">
+            <label>
+                <input id="usertitle" type="text" placeholder="title">
+                <input id="usersummary" type="text" placeholder="summary">
+                <input id="userrating" type="text" placeholder="number 1-5">
+            </label>
+        </div>
+        <div class="container holder">
+            <div class="row d-flex">
+                <div class="column d-flex" id="nowplaying">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container holder">
+        <div class="row">
+            <div class="column d-flex" id="popular">
+            </div>
+        </div>
+    </div>
 <script type="module" src="./js/main.js"></script>
 </body>
 </html>
